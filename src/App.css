@@ -5,4 +5,25 @@
 
 .navbar {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+  background-color: #343a40; /* Darker grey color for the navbar */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px; /* Space between navbar items */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from the toggler */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+  }
 }
